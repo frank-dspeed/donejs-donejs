@@ -1,6 +1,6 @@
 {
   "name": "donejs-donejs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creates Compatibility between donejs-cli and generator-dssrv",
   "main": "index.js",
   "license": "MIT",

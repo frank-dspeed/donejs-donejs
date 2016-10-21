@@ -696,7 +696,7 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
-generator-dssrv:
+generator-dssrv@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/generator-dssrv/-/generator-dssrv-0.10.0.tgz#5101642a461d254ac8e64963a78d0a0699ce067c"
   dependencies:

@@ -16,7 +16,7 @@
     "release:major": "npm version major && npm publish",
     "engine-deps": "install-engine-dependencies",
     "coverage": "istanbul cover _mocha -- test/ --timeout 600000",
-    "postinstall": "echo $PWD && ln -s $PWD/node_modules/generator-dssrv/app $PWD/app && ln -s $PWD/node_modules/generator-dssrv/app $PWD/app && ln -s $PWD/node_modules/generator-dssrv/lib $PWD/lib && ln -s $PWD/node_modules/generator-dssrv/module $PWD/module  &&  ln -s $PWD/node_modules/generator-dssrv/plugin $PWD/plugin &&  ln -s $PWD/node_modules/generator-dssrv/supermodel $PWD/supermodel",
+    "postinstall": "echo $PWD && rm -rf $PWD/versions $PWD/app $PWD/generator $PWD/plugin $PWD/supermodel $PWD/lib $PWD/module && ln -s $PWD/node_modules/generator-dssrv/versions $PWD/versions && ln -s $PWD/node_modules/generator-dssrv/app $PWD/app && ln -s $PWD/node_modules/generator-dssrv/lib $PWD/lib && ln -s $PWD/node_modules/generator-dssrv/module $PWD/module  &&  ln -s $PWD/node_modules/generator-dssrv/plugin $PWD/plugin &&  ln -s $PWD/node_modules/generator-dssrv/supermodel $PWD/supermodel",
     "coverage:upload": "istanbul cover _mocha --report lcovonly -- test/ --timeout 600000 && cat ./coverage/lcov.info | ./node_modules/coveralls-send/bin/coveralls.js"
   },
   "dependencies": {
